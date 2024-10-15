@@ -6,7 +6,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 @st.cache_data
 def load_data():
     df = pd.read_csv("anime.csv")  
-    df = df.dropna(subset=['Genres'])  # Drop rows with missing genres
+    df = df.dropna(subset=['Genres'])
     return df
 
 def process_data(df):
